@@ -25,9 +25,9 @@ const gatherTeamInfo = () => {
                 'Engineer',
                 'Intern',
                 'All employees have been input'
-            ]
-    }])
-    .then(answers => {
+            ],
+        }])
+        .then(answers => {
         switch(answers.role) {
             case 'Manager':
                 inquirer.prompt([{ 
@@ -107,7 +107,7 @@ const gatherTeamInfo = () => {
                 const intern = new Intern(answers.role, answers.name, answers.id, answers.email, answers.school);
                 allEmployees.push(intern)});
             break;
-            default: 
+            default:
     }})};
     //     function newManager() {
     //         inquirer.prompt([{ 

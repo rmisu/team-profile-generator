@@ -17,7 +17,7 @@ function generatePage(allEmployees) {
     <main>
         <section class=card>
             <h2>
-                ${generateManager(allEmployees)}
+                ${(allEmployees.name)}
             </h2>
         </section>
     </main>

@@ -15,24 +15,6 @@ const questions = {
 }
 const allEmployees = [];
 
-// const triggerQuestions = () => {
-//     return inquirer.prompt ([{
-//         type: 'list',
-//         name: 'newInput',
-//         message: 'Do you have employee data to input?',
-//         choices: [
-//             'Yes',
-//             'No'
-//         ],
-//     }])
-//     .then(data => {
-//         if (data.newInput === 'Yes') {
-//         return gatherTeamInfo()}
-//         else if (data.newInput === 'No') {
-//         return console.log('Team Profile complete!')
-//     }})
-// };
-
 function init () {
 
     function managerData () {

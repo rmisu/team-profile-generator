@@ -58,7 +58,7 @@ function init () {
         }
     ])
     .then(answers => {
-        const manager = new Manager(answers.role, answers.name, answers.id, answers.email, answers.office);
+        const manager = new Manager(answers.name, answers.id, answers.email, answers.office);
         allEmployees.push(manager)
     gatherTeamInfo()
     })
@@ -113,7 +113,7 @@ function engineerData () {
             }
         ])
         .then(answers => {
-            const engineer = new Engineer(answers.role, answers.name, answers.id, answers.email, answers.github);
+            const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
             allEmployees.push(engineer)
             gatherTeamInfo();
         })       
@@ -142,7 +142,7 @@ function internData () {
                 }
             ])
             .then(answers => {
-                const intern = new Intern(answers.role, answers.name, answers.id, answers.email, answers.school);
+                const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
                 allEmployees.push(intern)
                 gatherTeamInfo();
             })
